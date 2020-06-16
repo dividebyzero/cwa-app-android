@@ -28,4 +28,8 @@ jobs:
     - uses: eskatos/gradle-command-action@v1
       with:
         arguments: build
+    - uses: actions/upload-artifact@v2
+      with:
+        name: save artefacts
+        path: /build/
 
